@@ -34,7 +34,7 @@ rule
 
 # skip
             {BLANK}       # no action
-
+            \-\-.*$     # no action
 # keywords
             SELECT        { [:SELECT, text] }
             DATE          { [:DATE, text] }
